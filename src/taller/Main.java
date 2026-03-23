@@ -1,5 +1,7 @@
 package taller;
+
 import java.util.Scanner;
+
 public class Main {
 	
 	

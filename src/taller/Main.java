@@ -1,6 +1,5 @@
 package taller;
 import java.util.Scanner;
-import java.util.ArrayList;
 public class Main {
 	
 	
@@ -25,9 +24,7 @@ public class Main {
 				System.out.println("Ver futuras citas");
 				System.out.println("Agendar cita: ");
 				System.out.println("Cancelar cita: ");
-				System.out.println("Modificar cita: ");		
-				
-				switch 
+				System.out.println("Modificar cita: "); 
 			}
 			
 			case 2 -> {

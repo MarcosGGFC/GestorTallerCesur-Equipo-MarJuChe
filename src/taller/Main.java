@@ -49,9 +49,8 @@ public class Main {
 				
 			}
 			case 4 -> {
-				//System.out.println("");
-				System.out.println("Buscar: "); 
-				System.out.println("Añadir Vehiculo: ");
+				
+				menuVehiculos();
 				
 			}
 			case 5 -> {
@@ -85,7 +84,6 @@ public class Main {
         System.out.println("Contratar empleado: ");
         System.out.println("Ver horario de un empleado");      
 
-
     }
 
 	private static void menuClientes() {
@@ -94,7 +92,15 @@ public class Main {
         System.out.println("Añadir cliente: ");
         System.out.println("Modificar información del cliente: ");      
 
+    }
+
+	private static void menuVehiculos() {
+   
+        System.out.println("Buscar vehiculo: ");
+        System.out.println("Añadir Vehiculo: ");
+        System.out.println("Modificar información del Vehiculo: ");
 
     }
+
 
 }

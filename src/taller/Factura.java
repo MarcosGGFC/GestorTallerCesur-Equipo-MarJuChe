@@ -22,4 +22,9 @@ public class Factura {
 	public void setListaElementos(ArrayList<Item> listaElementos) {
 		this.listaElementos = listaElementos;
 	}
+	
+	public Factura(int id, ArrayList<Item> listaElementos) {
+		this.id = id;
+		this.listaElementos = listaElementos;
+	}
 }

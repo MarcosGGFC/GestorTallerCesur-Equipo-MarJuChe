@@ -2,6 +2,8 @@ package taller;
 
 import java.util.Scanner;
 
+import taller.logic.Taller;
+
 public class Main {
 	
 	private static Taller miTaller = new Taller();

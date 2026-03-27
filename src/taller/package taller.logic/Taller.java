@@ -7,7 +7,6 @@ public class Taller {
 	ArrayList<Coche> listaCoches = new ArrayList<>();
 	ArrayList<Empleado> listaEmpleados = new ArrayList<>();
 	ArrayList<Factura> listaFacturas = new ArrayList<>();
-	ArrayList<Cita> listaCitas = new ArrayList<>();
 	ArrayList<Cliente> listaClientes = new ArrayList<>();
 
 	
@@ -21,28 +20,7 @@ public class Taller {
 		Coche coche = new Coche(matricula,modelo,descripcionFallo);
 			
 		listaCoches.add(coche);
-		
 
-	}
-	
-	private static void listarCitasHoy() {
-	// En proceso
-	}
-
-	private static void listarFuturasCitas() {
-	// En proceso
-	}
-
-	private static void AgendarCitas() {
-	// En proceso
-	}
-
-	private static void CancelarCitas() {
-	// En proceso
-	}
-
-	private static void ModificarCitas() {
-	// En proceso
 	}
 	
 }

@@ -7,6 +7,7 @@ import taller.logic.Taller;
 public class Main {
 	
 	private static Taller miTaller = new Taller();
+	private static CitasGestor gestorCitas = new CitasGestor();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

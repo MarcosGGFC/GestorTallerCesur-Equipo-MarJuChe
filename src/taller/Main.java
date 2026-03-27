@@ -44,9 +44,8 @@ public class Main {
 			}
 
 			case 3 -> {
-				//System.out.println("");
-				System.out.println("Buscar: "); //Opcion de modificar despues.
-				System.out.println("Añadir cliente: ");
+				
+				menuClientes();
 				
 			}
 			case 4 -> {
@@ -85,6 +84,15 @@ public class Main {
         System.out.println("Modificar empleado");
         System.out.println("Contratar empleado: ");
         System.out.println("Ver horario de un empleado");      
+
+
+    }
+
+	private static void menuClientes() {
+   
+        System.out.println("Buscar cliente: ");
+        System.out.println("Añadir cliente: ");
+        System.out.println("Modificar información del cliente: ");      
 
 
     }

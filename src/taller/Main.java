@@ -48,23 +48,20 @@ public class Main {
 				menuClientes();
 				
 			}
+
 			case 4 -> {
 				
 				menuVehiculos();
 				
 			}
+			
 			case 5 -> {
-				//System.out.println("");
-				System.out.println("Buscar por Cliente :");
-				System.out.println("Buscar por ID factura: ");
-				System.out.println("Buscar por matricula: ");
-				System.out.println("Buscar por empleado:  ");
-				System.out.println("Buscar por partes:  ");
+
+				menuFacturas();
+
 			}
 			
-			
 		}
-
 
 	}
 
@@ -102,5 +99,14 @@ public class Main {
 
     }
 
+	private static void menuFacturas() {
+   
+        System.out.println("Buscar por Cliente :");
+        System.out.println("Buscar por ID factura: ");
+        System.out.println("Buscar por matricula: ");
+        System.out.println("Buscar por empleado:  ");
+        System.out.println("Buscar por partes:  ");
+
+    }
 
 }

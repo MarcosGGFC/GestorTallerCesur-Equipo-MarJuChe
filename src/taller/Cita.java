@@ -64,5 +64,10 @@ public class Cita {
 		this.factura = factura;
 		this.empleado = empleado;
 	}
+	
+	@Override
+	public String toString() {
+		return "Cita [fecha=" + fecha + ", hora=" + hora + ", cliente=" + cliente + ", coche=" + coche + ", factura=" + factura + ", empleado=" + empleado + "]";
+	}
 
 }

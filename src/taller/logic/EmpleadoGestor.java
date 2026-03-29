@@ -2,7 +2,7 @@ package taller.logic;
 
 import java.util.ArrayList;
 
-import taller.Empleado;
+import taller.models.Empleado;
 
 public class EmpleadoGestor {
 

@@ -1,6 +1,5 @@
 package taller.models;
 
-import taller.Empleado;
 import taller.Factura;
 
 public class Cita {

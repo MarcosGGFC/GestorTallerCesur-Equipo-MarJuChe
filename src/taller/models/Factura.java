@@ -1,6 +1,8 @@
-package taller;
+package taller.models;
 
 import java.util.ArrayList;
+
+import taller.Item;
 
 public class Factura {
 	

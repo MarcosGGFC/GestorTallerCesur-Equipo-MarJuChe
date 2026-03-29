@@ -1,7 +1,5 @@
 package taller.models;
 
-import taller.Factura;
-
 public class Cita {
 	private String fecha;
 	private String hora;

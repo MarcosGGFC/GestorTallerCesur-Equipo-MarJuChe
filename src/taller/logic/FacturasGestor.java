@@ -2,7 +2,7 @@ package taller.logic;
 
 import java.util.ArrayList;
 
-import taller.Factura;
+import taller.models.Factura;
 
 public class FacturasGestor {
 

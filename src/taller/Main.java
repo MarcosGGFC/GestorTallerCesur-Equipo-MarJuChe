@@ -34,11 +34,11 @@ public class Main {
 
 				switch(opcion) {
 
-					case 1 -> Taller.listarCitasHoy();
-					case 2 -> Taller.listarFuturasCitas();
-					case 3 -> Taller.AgendarCitas();
-					case 4 -> Taller.CancelarCitas();
-					case 5 -> Taller.ModificarCitas();
+					case 1 -> CitasGestor.listarCitasHoy();
+					case 2 -> CitasGestor.listarFuturasCitas();
+					case 3 -> CitasGestor.AgendarCitas();
+					case 4 -> CitasGestor.CancelarCitas();
+					case 5 -> CitasGestor.ModificarCitas();
 				}
 			
 			}

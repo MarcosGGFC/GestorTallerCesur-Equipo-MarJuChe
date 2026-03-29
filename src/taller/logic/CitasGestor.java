@@ -2,7 +2,7 @@ package taller.logic;
 
 import java.util.ArrayList;
 
-import taller.Cita;
+import taller.models.Cita;
 
 public class CitasGestor {
 

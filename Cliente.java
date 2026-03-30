@@ -35,6 +35,15 @@ public class Cliente {
     public void setDni(String dni) {
         this.dni = dni;
     }
+
+    @Override
+    public String toString() {
+        return  "Cliente { " +
+                "DNI: '" + dni +
+                "' Nombre: '" + nombre +
+                "' Apellido: '" + apellido +
+                "' }";
+    }
 	
 	
 }

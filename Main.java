@@ -51,6 +51,7 @@ public class Main {
 				menuClientes();
 				System.out.println("Selecciona una opcion:");
 				opcion = sc.nextInt();
+				sc.nextLine(); 
 
 				switch(opcion) {
 

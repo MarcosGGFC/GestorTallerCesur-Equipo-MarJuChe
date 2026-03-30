@@ -26,6 +26,9 @@ public class Main {
 
 				menuCitas();
 
+				System.out.println("Selecciona una opcion:");
+				opcion = sc.nextInt();
+
 				switch(opcion) {
 
 					case 1 -> CitasGestor.listarCitasHoy();
@@ -39,13 +42,23 @@ public class Main {
 			
 			case 2 -> {
 
-				menuEmpleados();  
+				menuEmpleados(); 
 
 			}
 
 			case 3 -> {
 				
 				menuClientes();
+				System.out.println("Selecciona una opcion:");
+				opcion = sc.nextInt();
+
+				switch(opcion) {
+
+					case 1 -> ClienteGestor.buscarCliente();
+					case 2 -> ClienteGestor.addCliente();
+					case 3 -> ClienteGestor.modCliente();
+					
+				}
 				
 			}
 

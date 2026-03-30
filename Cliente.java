@@ -1,5 +1,3 @@
-package taller;
-
 public class Cliente {
 
 	private String nombre;

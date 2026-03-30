@@ -1,5 +1,3 @@
-package taller;
-
 public class Servicio extends Item {
 
 	public Servicio() {

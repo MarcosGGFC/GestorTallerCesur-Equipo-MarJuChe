@@ -1,5 +1,3 @@
-package taller;
-
 public class Empleado {
 	private String nombre;
 	private String puesto;

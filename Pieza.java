@@ -1,5 +1,3 @@
-package taller;
-
 public class Pieza extends Item {
 	private String nombre;
 	private String marca;

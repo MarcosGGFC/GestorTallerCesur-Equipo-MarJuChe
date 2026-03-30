@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
 	
 	private static CitasGestor gestorCitas = new CitasGestor();
+	private static ClienteGestor clienteGestor = new ClienteGestor();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

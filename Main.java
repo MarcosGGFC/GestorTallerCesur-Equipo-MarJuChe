@@ -124,6 +124,17 @@ public class Main {
 
 	private static void addCliente() {
 
+		System.out.print("Introduce DNI: ");
+        String dni = sc.nextLine();
+
+        System.out.print("Introduce Nombre: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Introduce Apellido: ");
+        String apellido = sc.nextLine();
+
+        clienteGestor.altaCliente(dni, nombre, apellido);
+
     }
 
     private static void buscarCliente() {

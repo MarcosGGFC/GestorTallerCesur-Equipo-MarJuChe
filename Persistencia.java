@@ -107,7 +107,7 @@ public class Persistencia {
             String linea;
             while ((linea = lector.readLine()) != null) {
                 String[] d = linea.split(",");
-                if (d.length == 3) lista.add(new Coche(d[0], d[1], d[2]));
+                if (d.length == 3) lista.add(new Coche(null, d[0], d[1], d[2]));
             }
         } catch (Exception e) {
             System.out.println("Error al cargar coches: " + e.getMessage());

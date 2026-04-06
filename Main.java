@@ -86,7 +86,7 @@ public class Main {
 					case 1 -> buscarCoche();
 					case 2 -> addCoche();
 					case 3 -> modCoche();
-					
+
 				}
 				
 			}
@@ -164,6 +164,25 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+	private static void addCoche() {
+		try {
+			System.out.print("Introduce la matrícula: ");
+			String matricula = sc.nextLine();
+			
+			System.out.print("Introduce el modelo: ");
+			String modelo = sc.nextLine();
+			
+			System.out.print("Descripción del fallo: ");
+			String fallo = sc.nextLine();
+
+			cocheGestor.addCoche(matricula, modelo, fallo);
+			System.out.println("Vehículo registrado correctamente.");
+		
+		} catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+	}
 
     private static void buscarCliente() {
 		try {

@@ -18,4 +18,17 @@ public class EmpleadoGestor {
 		return null;
 	}
 
+    // 3. MODIFICAR EMPLEADO
+	public boolean modificarEmpleado(String nombre, String nuevoPuesto, double nuevoSueldo, String nuevoTurno) {
+		Empleado empleado = buscarEmpleado(nombre);
+		
+		if (empleado != null) {
+			empleado.setPuesto(nuevoPuesto);
+			empleado.setSueldo(nuevoSueldo);
+			empleado.setTurno(nuevoTurno);
+			return true; 
+		}
+		return false; 
+	}
+
 }

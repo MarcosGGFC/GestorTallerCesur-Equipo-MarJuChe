@@ -1,0 +1,1 @@
+Tomas,Becario,1000.0,Mañana,true

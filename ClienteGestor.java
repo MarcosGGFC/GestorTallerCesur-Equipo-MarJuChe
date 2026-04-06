@@ -5,12 +5,12 @@ public class ClienteGestor {
 private ArrayList<Cliente> listaClientes = Persistencia.cargarClientes();
 
     public ClienteGestor() {
-        this.listaClientes = new ArrayList<>();
+        
     }
 
     public void altaCliente(String dni, String nombre, String apellido) {
        
-        listaClientes.add(new Cliente(dni, nombre, apellido));
+        listaClientes.add(new Cliente(nombre, apellido, dni));
         Persistencia.guardarClientes(listaClientes);
     }
 

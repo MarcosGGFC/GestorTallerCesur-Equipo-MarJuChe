@@ -27,4 +27,9 @@ public class Factura {
 		this.id = id;
 		this.listaElementos = listaElementos;
 	}
+	
+	@Override
+	public String toString() {
+		return "Factura [id=" + id + ", listaElementos=" + listaElementos + "]";
+	}
 }

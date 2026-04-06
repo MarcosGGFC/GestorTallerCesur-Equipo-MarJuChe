@@ -96,7 +96,7 @@ public class Main {
 		System.out.println("1. Contratar empleado");
 		System.out.println("2. Ver horario de un empleado");      
 		System.out.println("3. Modificar empleado");
-		
+
 	}
 
 	private static void menuClientes() {
@@ -195,5 +195,29 @@ public class Main {
     	clienteGestor.altaCliente("Pepe", "Pérez", "12345678A");
     	clienteGestor.altaCliente("Ana", "García", "87654321B");
     }
+
+	private static void addEmpleado() {
+		try {
+			System.out.print("Introduce Nombre: ");
+			String nombre = sc.nextLine();
+			
+			System.out.print("Introduce Puesto: ");
+			String puesto = sc.nextLine();
+			
+			System.out.print("Introduce Sueldo: ");
+			double sueldo = sc.nextDouble();
+			sc.nextLine(); // Esto limpia el "intro" fantasma del teclado
+			
+			System.out.print("Introduce Turno (Mañana/Tarde/Noche): ");
+			String turno = sc.nextLine();
+
+			empleadoGestor.contratarEmpleado(nombre, puesto, sueldo, turno);
+			System.out.println("Empleado contratado correctamente.");
+			
+		} catch (Exception e) {
+			System.out.println("Error al introducir los datos: " + e.getMessage());
+			sc.nextLine(); // Limpia por si han metido letras en el sueldo sin querer
+		}
+	}
 
 }

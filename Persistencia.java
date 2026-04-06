@@ -85,4 +85,34 @@ public class Persistencia {
         return listaClientes;
     }
 
+
+
+    private static final String FICHERO_COCHES = "coches.txt";
+
+    public static void guardarCoches(ArrayList<Coche> listaCoches) {
+        try (PrintWriter escritor = new PrintWriter(new FileWriter(FICHERO_COCHES))) {
+            for (Coche c : listaCoches) {
+                escritor.println(c.getMatricula() + "," + c.getModelo() + "," + c.getDescripcionFallo());
+            }
+        } catch (IOException e) {
+            System.out.println("Error al guardar coches: " + e.getMessage());
+        }
+    }
+
+    public static ArrayList<Coche> cargarCoches() {
+        ArrayList<Coche> lista = new ArrayList<>();
+        File archivo = new File(FICHERO_COCHES);
+        if (!archivo.exists()) return lista;
+        try (BufferedReader lector = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            while ((linea = lector.readLine()) != null) {
+                String[] d = linea.split(",");
+                if (d.length == 3) lista.add(new Coche(d[0], d[1], d[2]));
+            }
+        } catch (Exception e) {
+            System.out.println("Error al cargar coches: " + e.getMessage());
+        }
+        return lista;
+    }
+
 }

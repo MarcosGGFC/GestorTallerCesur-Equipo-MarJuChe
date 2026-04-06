@@ -28,4 +28,16 @@ public class CocheGestor {
 	
 	}
 
+	public boolean modificarCoche(String matricula, String nuevoFallo) {
+
+		Coche coche = buscarCoche(matricula); 
+		
+		if (coche != null) {
+			coche.setDescripcionFallo(nuevoFallo);
+			return true;
+		}
+		return false; 
+	
+	}
+
 }

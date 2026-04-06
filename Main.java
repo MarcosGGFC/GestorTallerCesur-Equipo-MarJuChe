@@ -45,7 +45,15 @@ public class Main {
 			case 2 -> {
 
 				menuEmpleados(); 
+				System.out.println("Selecciona una opcion:");
+                opcion = sc.nextInt();
+                sc.nextLine();
 
+                switch(opcion) {
+                    case 1 -> addEmpleado();
+                    case 2 -> verHorarioEmpleado();
+                    case 3 -> modEmpleado();
+                }
 			}
 
 			case 3 -> {

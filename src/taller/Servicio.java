@@ -1,8 +1,6 @@
 package taller;
 
 public class Servicio extends Item {
-    private final String nombre;
-    private final double precio;
 
     // Constructor: Para crear el servicio con datos iniciales
     public Servicio(String nombre, double precio) {

@@ -1,10 +1,8 @@
 package taller;
 
-    private final int stock;
-
 public class Item {
     private int id;
-    private string nombre;
+    private String nombre;
     private String descripcion;
     private double precio;
     private int stock;

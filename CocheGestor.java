@@ -17,4 +17,15 @@ public class CocheGestor {
 
 	}
 
+	public Coche buscarCoche(String matricula) {
+
+		for (Coche coche : listaCoches) {
+			if (coche.getMatricula().equals(matricula)) {
+				return coche;
+			}
+		}
+		return null;
+	
+	}
+
 }

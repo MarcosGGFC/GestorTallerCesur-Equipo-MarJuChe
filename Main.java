@@ -5,6 +5,7 @@ public class Main {
 	private static CitasGestor gestorCitas = new CitasGestor();
 	private static ClienteGestor clienteGestor = new ClienteGestor();
 	private static EmpleadoGestor empleadoGestor = new EmpleadoGestor();
+	private static CocheGestor cocheGestor = new CocheGestor();
 
 	private static Scanner sc = new Scanner(System.in);
 	

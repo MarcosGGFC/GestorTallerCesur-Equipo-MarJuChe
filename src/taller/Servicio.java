@@ -1,27 +1,18 @@
 package taller;
 
 public class Servicio extends Item {
-
-public class Servicio {
-    private String nombre;
-    private double precio;
+    private final String nombre;
+    private final double precio;
 
     // Constructor: Para crear el servicio con datos iniciales
     public Servicio(String nombre, double precio) {
+        super(0, nombre, "", precio, 0);
         this.nombre = nombre;
         this.precio = precio;
     }
-
- 
-    public String getNombre() { return nombre; }
-    public double getPrecio() { return precio; }
-
-    public void setNombre(String nombre) { this.nombre = nombre; }
-    public void setPrecio(double precio) { this.precio = precio; }
 
     @Override
     public String toString() {
         return nombre + " - " + precio + "€";
     }
-}
 }

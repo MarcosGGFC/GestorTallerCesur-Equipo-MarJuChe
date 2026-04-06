@@ -163,7 +163,27 @@ public class Main {
     }
 
     private static void modCliente() {
-       
+
+    	System.out.print("Introduce el DNI del cliente a modificar: ");
+        String dni = sc.nextLine();
+
+        Cliente cliente = clienteGestor.buscarCliente(dni);
+
+        if (cliente != null) {
+            System.out.println("Cliente encontrado: " + cliente);
+            
+            System.out.print("Nuevo nombre: ");
+            String nuevoNombre = sc.nextLine();
+            
+            System.out.print("Nuevo apellido: ");
+            String nuevoApellido = sc.nextLine();
+
+			clienteGestor.modificarCliente(dni, nuevoNombre, nuevoApellido);
+            System.out.println("Cliente actualizado con éxito.");
+			
+        } else {
+            System.out.println("No se puede modificar debido a que el DNI no se ha encontrado.");
+        }
     }
 
 	private static void precargarDatos() {

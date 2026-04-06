@@ -25,5 +25,17 @@ public class ClienteGestor {
         
     }
 
+    public boolean modificarCliente(String dni, String nuevoNombre, String nuevoApellido) {
+
+        Cliente cliente = buscarCliente(dni); 
+        if (cliente != null) {
+            cliente.setNombre(nuevoNombre);
+            cliente.setApellido(nuevoApellido);
+            return true; 
+        }
+        return false; 
+        
+    }
+
 
 }

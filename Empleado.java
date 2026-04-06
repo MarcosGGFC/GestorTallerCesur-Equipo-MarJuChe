@@ -55,7 +55,7 @@ public class Empleado {
 	
 	@Override
 	public String toString() {
-		return "Nombre: " + this.nombre + " Puesto: " + this.puesto;
+		return "Empleado [Nombre=" + nombre + ", Puesto=" + puesto + ", Sueldo=" + sueldo + "€, Turno=" + turno + ", Disponible=" + estaDisponible + "]";
 	}
 	
 	

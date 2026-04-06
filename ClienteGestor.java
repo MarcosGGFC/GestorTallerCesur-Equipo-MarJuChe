@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ClienteGestor {
 
-    private ArrayList<Cliente> listaClientes;
+private ArrayList<Cliente> listaClientes = Persistencia.cargarClientes();
 
     public ClienteGestor() {
         this.listaClientes = new ArrayList<>();
@@ -11,7 +11,7 @@ public class ClienteGestor {
     public void altaCliente(String dni, String nombre, String apellido) {
        
         listaClientes.add(new Cliente(dni, nombre, apellido));
-
+        Persistencia.guardarClientes(listaClientes);
     }
 
     public Cliente buscarCliente(String dni) {
@@ -31,6 +31,7 @@ public class ClienteGestor {
         if (cliente != null) {
             cliente.setNombre(nuevoNombre);
             cliente.setApellido(nuevoApellido);
+            Persistencia.guardarClientes(listaClientes);
             return true; 
         }
         return false; 

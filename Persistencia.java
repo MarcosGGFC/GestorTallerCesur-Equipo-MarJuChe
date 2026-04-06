@@ -55,4 +55,34 @@ public class Persistencia {
         return listaEmpleados;
     }
 
+    private static final String FICHERO_CLIENTES = "clientes.txt";
+
+    public static void guardarClientes(ArrayList<Cliente> listaClientes) {
+        try (PrintWriter escritor = new PrintWriter(new FileWriter(FICHERO_CLIENTES))) {
+            for (Cliente clienteActual : listaClientes) {
+                escritor.println(clienteActual.getNombre() + "," + clienteActual.getApellido() + "," + clienteActual.getDni());
+            }
+        } catch (IOException error) {
+            System.out.println("Error al guardar clientes: " + error.getMessage());
+        }
+    }
+
+    public static ArrayList<Cliente> cargarClientes() {
+        ArrayList<Cliente> listaClientes = new ArrayList<>();
+        File archivoClientes = new File(FICHERO_CLIENTES);
+        if (!archivoClientes.exists()) return listaClientes;
+        try (BufferedReader lector = new BufferedReader(new FileReader(archivoClientes))) {
+            String lineaTexto;
+            while ((lineaTexto = lector.readLine()) != null) {
+                String[] datos = lineaTexto.split(",");
+                if (datos.length == 3) {
+                    listaClientes.add(new Cliente(datos[0], datos[1], datos[2]));
+                }
+            }
+        } catch (Exception error) {
+            System.out.println("Error al cargar clientes: " + error.getMessage());
+        }
+        return listaClientes;
+    }
+
 }
